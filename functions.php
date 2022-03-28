@@ -8,6 +8,7 @@ function change_password_form() { ?>
         <input id="new_password" type="password" name="new_password" title="new_password" placeholder="" required>
         <label for="confirm_new_password">Confirm new password:</label>
         <input id="confirm_new_password" type="password" name="confirm_new_password" title="confirm_new_password" placeholder="" required>
+	<? wp_nonce_field(); ?>
         <input type="submit" value="Change Password">
     </form>
 <?php }
